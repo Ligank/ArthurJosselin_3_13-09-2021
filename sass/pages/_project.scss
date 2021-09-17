@@ -1,0 +1,130 @@
+.Restaurant_section
+{
+    background-color: whitesmoke;
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 4em;
+        h2
+        {
+            font-weight: bold;
+            margin: 1.5em 0 0.5em 1em;
+        }
+        .Restaurant__liste
+        {
+            display: flex;
+            flex-wrap: wrap;
+                .Lien_restaurant
+                {
+                    background-color: white;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 4px rgb(155, 154, 154);
+                    height: 250px;
+                    width: 90%;
+                    margin: 0.7em auto 0.7em auto;
+                    display: flex;
+                    justify-content: end;
+                        .Nouveau
+                        {
+                            position: absolute;
+                            background-color: #99E2D0;
+                            color: #008766;
+                            border-radius: 3px;
+                            padding: 0.5em;
+                            margin: 1em 1em 0 0;
+                        }
+                        .Restaurant
+                        {
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius: 15px;
+                            box-shadow: 0px 0px 4px rgb(155, 154, 154);
+                            height: 250px;
+                            width: 100%;
+                                .Image_restaurant
+                                {
+                                    width: 100%;
+                                    height: 175px;
+                                    border-radius: 15px 15px 0 0;
+                                    object-fit: cover ;
+                                }
+                                .Legende
+                                {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    margin: 1em 1em 0 1em;
+                                        .Restaurant__texte
+                                        {
+                                            font-size: 1.1em;
+                                        }
+                                        .fa-heart
+                                        {
+                                            font-size: 1.5em;
+                                            margin-top: 0.3em;
+                                        }
+                                }
+                        }
+                }
+                
+        }
+}
+
+.Fonctionnement
+{
+    margin: 1.5em 0 1.5em 0;
+    width: 100%;
+        h2
+        {
+            margin: 0 0 1em 1em;
+        }
+        .Fonctionnement__tableau
+        {
+            position: relative;
+                .Tableau__case
+                {
+                    display: flex;
+                    position: relative;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 4px rgb(155, 154, 154);
+                    background-color: #f6f6f6;
+                    width: 90%;
+                    margin: 1.5em auto 1.5em auto;
+                        .Case__chiffre
+                        {
+                            background-color: #9356DC;
+                            color: white;
+                            width: 24px;
+                            height: 24px;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: -12px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            align-self: center;
+                        }
+                        .Case__signe_texte
+                        {
+                            display: flex;
+                            align-items: center;
+                            width: 80%;
+                            margin: 1em 0 1em 2em;
+                                .Signe
+                                {
+                                    color: #7e7e7e;
+                                    margin-right: 1.2em;
+                                    font-size: larger;
+                                }
+
+                        }
+                }
+                .Tableau__case:hover
+                    {
+                        background-color: #f5edff;
+                            .Signe
+                            {
+                                color: #9356DC;
+                            }
+                    }
+        }
+}

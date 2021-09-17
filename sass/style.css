@@ -1,0 +1,280 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#Bloc_page {
+  max-width: 1340px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.Police {
+  font-family: 'Shrikhand', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+header {
+  -webkit-box-shadow: 1px 1px 4px #9b9a9a;
+          box-shadow: 1px 1px 4px #9b9a9a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  padding: 1em 0 1em 0;
+}
+
+header .Case_fleche {
+  width: 28%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .Case_fleche .Fleche {
+  font-size: 4.2vw;
+  color: #585353;
+}
+
+header .Logo {
+  width: 72%;
+}
+
+header .Logo .Logo__image {
+  width: 60%;
+  height: auto;
+}
+
+footer {
+  background-color: #272626;
+  color: white;
+  padding: 2em 0 2em 0;
+}
+
+footer .Police {
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  font-size: 1.3em;
+}
+
+footer .Bas {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2em;
+}
+
+footer .Bas li {
+  margin-top: 0.5em;
+}
+
+footer .Bas li .fa-utensils {
+  font-size: 0.8em;
+}
+
+footer .Bas li .fa-hands-helping {
+  font-size: 0.65em;
+}
+
+footer .Bas li .Infos {
+  margin-right: 1em;
+}
+
+.Image_carte {
+  width: 100%;
+}
+
+.Restaurant_section {
+  background-color: whitesmoke;
+  width: 100%;
+  margin-top: 2em;
+  padding-bottom: 4em;
+}
+
+.Restaurant_section h2 {
+  font-weight: bold;
+  margin: 1.5em 0 0.5em 1em;
+}
+
+.Restaurant_section .Restaurant__liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #9b9a9a;
+          box-shadow: 0px 0px 4px #9b9a9a;
+  height: 250px;
+  width: 90%;
+  margin: 0.7em auto 0.7em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Nouveau {
+  position: absolute;
+  background-color: #99E2D0;
+  color: #008766;
+  border-radius: 3px;
+  padding: 0.5em;
+  margin: 1em 1em 0 0;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #9b9a9a;
+          box-shadow: 0px 0px 4px #9b9a9a;
+  height: 250px;
+  width: 100%;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant .Image_restaurant {
+  width: 100%;
+  height: 175px;
+  border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant .Legende {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1em 1em 0 1em;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant .Legende .Restaurant__texte {
+  font-size: 1.1em;
+}
+
+.Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant .Legende .fa-heart {
+  font-size: 1.5em;
+  margin-top: 0.3em;
+}
+
+.Fonctionnement {
+  margin: 1.5em 0 1.5em 0;
+  width: 100%;
+}
+
+.Fonctionnement h2 {
+  margin: 0 0 1em 1em;
+}
+
+.Fonctionnement .Fonctionnement__tableau {
+  position: relative;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #9b9a9a;
+          box-shadow: 0px 0px 4px #9b9a9a;
+  background-color: #f6f6f6;
+  width: 90%;
+  margin: 1.5em auto 1.5em auto;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case .Case__chiffre {
+  background-color: #9356DC;
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case .Case__signe_texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  margin: 1em 0 1em 2em;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case .Case__signe_texte .Signe {
+  color: #7e7e7e;
+  margin-right: 1.2em;
+  font-size: larger;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case:hover {
+  background-color: #f5edff;
+}
+
+.Fonctionnement .Fonctionnement__tableau .Tableau__case:hover .Signe {
+  color: #9356DC;
+}
+/*# sourceMappingURL=style.css.map */

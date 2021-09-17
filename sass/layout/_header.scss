@@ -1,0 +1,35 @@
+header
+{
+   box-shadow: 1px 1px 4px rgb(155, 154, 154);;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   position: relative;
+   z-index: 1;
+   padding: 1em 0 1em 0;
+    .Case_fleche
+    {
+        width: 28%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .Fleche
+            {
+                font-size: 4.2vw;
+                color: rgb(88, 83, 83);
+            }
+    }
+    .Logo
+    {
+    width: 72%;
+        .Logo__image
+        {
+            width: 60%;
+            height: auto;
+        }
+    }
+}
+
+
+
+
