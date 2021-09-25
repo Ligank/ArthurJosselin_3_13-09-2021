@@ -1,0 +1,35 @@
+footer
+{
+    background-color: rgb(39, 38, 38);
+    color: white;
+    padding: 2em 0 2em 0;
+        .Police
+        {
+            padding-left: 1.5em;
+            margin-bottom: 0.5em;
+            font-size: 1.3em;
+        }
+        .Bas
+        {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-left: 2em;
+            li
+            {
+                margin-top: 0.5em;
+                    .fa-utensils
+                    {
+                        font-size: 0.8em;
+                    }
+                    .fa-hands-helping
+                    {
+                        font-size: 0.65em;
+                    }
+                    .Infos
+                    {
+                        margin-right: 1em;
+                    }
+            }
+        }
+}

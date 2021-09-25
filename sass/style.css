@@ -32,9 +32,45 @@ a {
   color: currentColor;
 }
 
+.Formulaire__bouton {
+  height: 50px;
+  min-width: 200px;
+  max-width: 220px;
+}
+
+.Formulaire__bouton:hover, .Formulaire__bouton2:hover {
+  cursor: pointer;
+  -webkit-filter: brightness(105%);
+          filter: brightness(105%);
+  -webkit-box-shadow: 2px 2px 4px 1px #726f6f;
+          box-shadow: 2px 2px 4px 1px #726f6f;
+}
+
+.Formulaire__bouton2 {
+  padding: 10px 0 10px 0;
+  min-width: 140px;
+  max-width: 160px;
+}
+
+.Formulaire__bouton, .Formulaire__bouton2 {
+  color: white;
+  font-size: 95%;
+  width: 60%;
+  border: 0px;
+  border-radius: 30px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  -webkit-box-shadow: 1px 1px 4px 1px #9b9a9a;
+          box-shadow: 1px 1px 4px 1px #9b9a9a;
+}
+
 header {
-  -webkit-box-shadow: 0px 4px 2px -2px #9b9a9a;
-          box-shadow: 0px 4px 2px -2px #9b9a9a;
+  -webkit-box-shadow: 0px 2px 2px -2px #9b9a9a;
+          box-shadow: 0px 2px 2px -2px #9b9a9a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +80,7 @@ header {
   width: 100%;
   position: relative;
   z-index: 1;
-  padding: 1em 0 1em 0;
+  padding: 1.5em 0 0.8em 0;
 }
 
 header .Case_fleche {
@@ -58,11 +94,9 @@ header .Case_fleche {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-header .Case_fleche .Fleche {
   font-size: 4.2vw;
   color: #585353;
+  align-items: center;
 }
 
 header .Logo {
@@ -116,6 +150,209 @@ footer .Bas li .Infos {
 
 .Image_carte {
   width: 100%;
+  max-width: 700px;
+}
+
+.Carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 10px 10px 0 0;
+}
+
+.Carte .Carte__titre {
+  background-color: hotpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.Carte a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 20px 0 20px 0;
+}
+
+.Carte .Carte__choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px 0 10px 0;
+}
+
+.Carte .Carte__choix h4 {
+  width: 40px;
+  overflow: visible;
+  color: #353535;
+  font-weight: 400;
+  border-bottom: 2px #99E2D0 solid;
+  margin: 0 0 5px 15px;
+}
+
+.Carte .Carte__choix .Plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Carte .Carte__choix .Plats .Choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  margin: 5px 0 5px 0;
+  width: 90%;
+  max-width: 350px;
+  min-width: 250px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 0px 4px #9b9a9a;
+          box-shadow: 0px 0px 4px #9b9a9a;
+  padding: 10px 0 10px 10px;
+}
+
+.Carte .Carte__choix .Plats .Choix .Texte_menu {
+  width: 80%;
+  background-color: blue;
+}
+
+.Carte .Carte__choix .Plats .Choix .Prix {
+  width: 30%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: blueviolet;
+}
+
+.Carte .Carte__choix .Plats .Choix .Icone_selection {
+  width: 0%;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+nav .Formulaire__icone_recherche {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #eaeaea;
+  width: 100%;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav .Formulaire__icone_recherche input {
+  border: 0px;
+  background-color: #eaeaea;
+}
+
+nav .Formulaire__icone_recherche i {
+  color: #353535;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: larger;
+  margin: 0 18px 5px 0;
+}
+
+nav .Formulaire__icone_recherche ::-webkit-input-placeholder {
+  color: #424141;
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav .Formulaire__icone_recherche :-ms-input-placeholder {
+  color: #424141;
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav .Formulaire__icone_recherche ::-ms-input-placeholder {
+  color: #424141;
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav .Formulaire__icone_recherche ::placeholder {
+  color: #424141;
+  font-size: larger;
+  font-weight: bold;
+}
+
+nav .Formulaire__icone_recherche input:focus, nav .Formulaire__icone_recherche textarea:focus, nav .Formulaire__icone_recherche select:focus {
+  outline: none;
+}
+
+nav .Formulaire__icone_recherche input[type="search"]::-webkit-search-decoration,
+nav .Formulaire__icone_recherche input[type="search"]::-webkit-search-cancel-button,
+nav .Formulaire__icone_recherche input[type="search"]::-webkit-search-results-button,
+nav .Formulaire__icone_recherche input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+nav .Formulaire__texte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #f6f6f6;
+  padding: 20px 0 40px 0;
+}
+
+nav .Formulaire__texte h1, nav .Formulaire__texte p {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 5px 0 5px 0;
+}
+
+nav .Formulaire__texte h1 {
+  width: 75%;
+}
+
+nav .Formulaire__texte p {
+  width: 80%;
+  margin-bottom: 20px;
+  color: #424141;
 }
 
 .Restaurant_section {
@@ -145,6 +382,7 @@ footer .Bas li .Infos {
           box-shadow: 0px 0px 4px #9b9a9a;
   height: 250px;
   width: 90%;
+  max-width: 350px;
   margin: 0.7em auto 0.7em auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +455,11 @@ footer .Bas li .Infos {
 
 .Fonctionnement .Fonctionnement__tableau {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .Fonctionnement .Fonctionnement__tableau .Tableau__case {
@@ -229,7 +472,8 @@ footer .Bas li .Infos {
           box-shadow: 0px 0px 4px #9b9a9a;
   background-color: #f6f6f6;
   width: 90%;
-  margin: 1.5em auto 1.5em auto;
+  max-width: 350px;
+  margin: 0.7em auto 0.7em auto;
 }
 
 .Fonctionnement .Fonctionnement__tableau .Tableau__case .Case__chiffre {
