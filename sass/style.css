@@ -74,9 +74,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -84,7 +84,7 @@ header {
 }
 
 header .Case_fleche {
-  width: 28%;
+  width: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,17 +94,20 @@ header .Case_fleche {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 4.2vw;
   color: #585353;
   align-items: center;
+  position: absolute;
+  left: 20px;
+  top: 42%;
 }
 
 header .Logo {
-  width: 72%;
+  width: 40%;
+  max-width: 300px;
 }
 
 header .Logo .Logo__image {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
@@ -150,7 +153,31 @@ footer .Bas li .Infos {
 
 .Image_carte {
   width: 100%;
-  max-width: 700px;
+  max-width: 1024px;
+  max-height: 60vw;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Image_carte .Image_carte2 {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Page_Restaurant {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Carte {
@@ -161,22 +188,31 @@ footer .Bas li .Infos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
   background-color: #f6f6f6;
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 50vw;
 }
 
 .Carte .Carte__titre {
-  background-color: hotpink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-size: larger;
   font-weight: 500;
+  margin-top: 20px;
+}
+
+.Carte .Carte__titre h1 {
+  margin-right: 20px;
 }
 
 .Carte a {
@@ -210,10 +246,10 @@ footer .Bas li .Infos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .Carte .Carte__choix .Plats .Choix {
@@ -222,10 +258,8 @@ footer .Bas li .Infos {
   display: flex;
   overflow: hidden;
   background-color: white;
-  margin: 5px 0 5px 0;
-  width: 90%;
-  max-width: 350px;
-  min-width: 250px;
+  margin: 10px 0 10px 0;
+  width: 350px;
   -ms-flex-item-align: center;
       align-self: center;
   border-radius: 15px;
@@ -235,16 +269,15 @@ footer .Bas li .Infos {
 }
 
 .Carte .Carte__choix .Plats .Choix .Texte_menu {
-  width: 80%;
-  background-color: blue;
+  width: 85%;
+  font-size: 15px;
 }
 
 .Carte .Carte__choix .Plats .Choix .Prix {
-  width: 30%;
+  width: 15%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: blueviolet;
 }
 
 .Carte .Carte__choix .Plats .Choix .Icone_selection {
@@ -382,7 +415,7 @@ nav .Formulaire__texte p {
           box-shadow: 0px 0px 4px #9b9a9a;
   height: 250px;
   width: 90%;
-  max-width: 350px;
+  max-width: 550px;
   margin: 0.7em auto 0.7em auto;
   display: -webkit-box;
   display: -ms-flexbox;
