@@ -1,3 +1,6 @@
+$Nouveau_cadre:#99E2D0;
+$Nouveau_ecrit: #008766;
+
 .Restaurant_section
 {
     background-color: whitesmoke;
@@ -12,6 +15,7 @@
         .Restaurant__liste
         {
             display: flex;
+            justify-content: center;
             flex-wrap: wrap;
                 .Lien_restaurant
                 {
@@ -20,15 +24,15 @@
                     box-shadow: 0px 0px 4px rgb(155, 154, 154);
                     height: 250px;
                     width: 90%;
-                    max-width: 550px;
-                    margin: 0.7em auto 0.7em auto;
+                    max-width: 490px;
+                    margin: 20px;
                     display: flex;
                     justify-content: end;
                         .Nouveau
                         {
                             position: absolute;
-                            background-color: #99E2D0;
-                            color: #008766;
+                            background-color: $Nouveau_cadre;
+                            color: $Nouveau_ecrit;
                             border-radius: 3px;
                             padding: 0.5em;
                             margin: 1em 1em 0 0;
@@ -58,17 +62,23 @@
                                         {
                                             font-size: 1.1em;
                                         }
-                                        .fa-heart
+                                        .Coeur
                                         {
                                             font-size: 1.5em;
                                             margin-top: 0.3em;
                                         }
+                                                                         
                                 }
                         }
                 }
                 
         }
 }
+
+.Lien_restaurant:hover
+{
+    transform: scale(1.05);
+}    
 
 .Fonctionnement
 {
@@ -125,6 +135,7 @@
                 .Tableau__case:hover
                     {
                         background-color: #f5edff;
+                        cursor: default;
                             .Signe
                             {
                                 color: #9356DC;
