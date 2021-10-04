@@ -5,12 +5,59 @@
   padding: 0;
 }
 
-#Bloc_page {
+.Bloc_page {
   max-width: 1340px;
   margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.Accueil {
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+.Chargement {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -75px 0 0 -75px;
+  border: 15px solid #9356DC;
+  border-radius: 50%;
+  border-top: 15px solid #FF79DA;
+  animation: Chargement 2s linear;
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}
+
+@keyframes Chargement {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.Accueil {
+  position: relative;
+  animation-name: Bloc_page;
+  animation-duration: 5s;
+}
+
+@keyframes Bloc_page {
+  from {
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 body {
@@ -82,10 +129,12 @@ h1, h2, h4 {
 }
 
 .Coeur:hover .Visible, .Coeur:hover .Visible2 {
+  transition: opacity 0.9s;
   opacity: 0%;
 }
 
 .Coeur:hover .Invisible {
+  transition: opacity 0.8s;
   opacity: 100%;
 }
 
@@ -253,12 +302,13 @@ footer .Bas li .Infos {
   overflow: hidden;
   background-color: white;
   margin: 10px 0 10px 0;
-  width: 94%;
+  width: 95%;
   max-width: 350px;
   align-self: center;
   border-radius: 15px;
   box-shadow: 0px 0px 4px #9b9a9a;
   cursor: pointer;
+  opacity: 0;
 }
 
 @media (min-width: 1050px) {
@@ -269,6 +319,10 @@ footer .Bas li .Infos {
 
 .Carte .Carte__choix .Plats .Choix .Texte_menu {
   width: 85%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex-shrink: 0;
   font-size: 15px;
   margin: 10px 0 10px 10px;
 }
@@ -281,11 +335,13 @@ footer .Bas li .Infos {
 
 .Carte .Carte__choix .Plats .Choix .Prix {
   width: 15%;
+  flex-shrink: 0;
   align-self: center;
 }
 
 .Carte .Carte__choix .Plats .Choix .Icone_selection {
-  width: 0%;
+  width: 15%;
+  flex-shrink: 0;
   border-radius: 0 15px 15px 0;
   color: white;
   background-color: #99E2D0;
@@ -295,8 +351,47 @@ footer .Bas li .Infos {
   font-size: larger;
 }
 
-.Choix:hover {
-  transform: scale(1.05);
+.Choix1, .Choix2, .Choix3, .Choix4 {
+  animation: Choix 1400ms;
+  animation-fill-mode: both;
+}
+
+.Choix1 {
+  animation-delay: 0.2s;
+}
+
+.Choix2 {
+  animation-delay: 0.4s;
+}
+
+.Choix3 {
+  animation-delay: 0.6s;
+}
+
+.Choix4 {
+  animation-delay: 0.8s;
+}
+
+@keyframes Choix {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.Choix:hover .Icone_selection, .Choix:hover .Prix {
+  transform: translateX(-60px);
+}
+
+.Choix:hover .Texte_menu {
+  width: 10px;
 }
 
 nav {
@@ -390,7 +485,7 @@ nav .Formulaire__texte p {
   box-shadow: 0px 0px 4px #9b9a9a;
   height: 250px;
   width: 90%;
-  max-width: 490px;
+  max-width: 450px;
   margin: 20px;
   display: flex;
   justify-content: end;
@@ -435,10 +530,6 @@ nav .Formulaire__texte p {
 .Restaurant_section .Restaurant__liste .Lien_restaurant .Restaurant .Legende .Coeur {
   font-size: 1.5em;
   margin-top: 0.3em;
-}
-
-.Lien_restaurant:hover {
-  transform: scale(1.05);
 }
 
 .Fonctionnement {

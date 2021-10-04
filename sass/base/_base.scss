@@ -1,4 +1,8 @@
 /* autoprefixer: off */
+$Primaire: #9356DC;
+$Secondaire: #FF79DA;
+$Tertiaire: #99E2D0;
+
 *, ::before, ::after
 {
     box-sizing: border-box;
@@ -6,7 +10,7 @@
     padding: 0;
 }
 
-#Bloc_page
+.Bloc_page
 {
     max-width: 1340px;
     margin: auto;
@@ -14,3 +18,52 @@
     flex-direction: column;
     justify-content: space-around; 
 }
+
+.Accueil
+{
+    opacity: 0;
+    animation-fill-mode: both;
+}
+
+.Chargement
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -75px 0 0 -75px;
+    border: 15px solid $Primaire;
+    border-radius: 50%;
+    border-top: 15px solid $Secondaire;
+    animation: Chargement 2s linear;
+    animation-fill-mode: both;
+    animation-duration: 2s;
+}
+
+@keyframes Chargement
+{
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.Accueil
+{
+    position: relative;
+    animation-name: Bloc_page;
+    animation-duration: 5s;
+}
+
+@keyframes Bloc_page
+{
+    from{ opacity:0 } 
+    to{ bottom:0; opacity:1 }
+}
+

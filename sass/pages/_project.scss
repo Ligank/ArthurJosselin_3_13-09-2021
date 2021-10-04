@@ -24,7 +24,7 @@ $Nouveau_ecrit: #008766;
                     box-shadow: 0px 0px 4px rgb(155, 154, 154);
                     height: 250px;
                     width: 90%;
-                    max-width: 490px;
+                    max-width: 450px;
                     margin: 20px;
                     display: flex;
                     justify-content: end;
@@ -74,12 +74,7 @@ $Nouveau_ecrit: #008766;
                 
         }
 }
-
-.Lien_restaurant:hover
-{
-    transform: scale(1.05);
-}    
-
+  
 .Fonctionnement
 {
     margin: 1.5em 0 1.5em 0;

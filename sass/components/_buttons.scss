@@ -57,10 +57,12 @@
                                         
 .Coeur:hover .Visible, .Coeur:hover .Visible2
 {
+    transition: opacity 0.9s;
     opacity: 0%;
 }
 
 .Coeur:hover .Invisible
 {
+    transition: opacity 0.8s;
     opacity: 100%;
 }
