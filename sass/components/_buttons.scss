@@ -1,26 +1,22 @@
-.Formulaire__bouton
-{
+.Formulaire__bouton {
     height: 50px;
     min-width: 200px;
     max-width: 220px;
 }
 
-.Formulaire__bouton:hover, .Formulaire__bouton2:hover
-{
+.Formulaire__bouton:hover, .Formulaire__bouton2:hover {
     cursor: pointer;
     filter: brightness(105%);
     box-shadow: 2px 2px 4px 1px rgb(114, 111, 111);
 }
 
-.Formulaire__bouton2
-{
+.Formulaire__bouton2 {
     padding: 10px 0 10px 0;
     min-width: 140px;
     max-width: 160px;
 }
 
-.Formulaire__bouton, .Formulaire__bouton2
-{
+.Formulaire__bouton, .Formulaire__bouton2 {
     color: white;
     font-size: 95%;
     width: 60%;
@@ -32,8 +28,7 @@
     box-shadow: 1px 1px 4px 1px rgb(155, 154, 154);
 }
 
-.Invisible
-{
+.Invisible {
     color: #FF79DA;
     background: -webkit-linear-gradient(#9356DC, #FF79DA);
     -webkit-background-clip: text;
@@ -41,28 +36,23 @@
     -webkit-text-fill-color: transparent;
     opacity: 0%;
 }
-.Visible
-{
+.Visible {
     margin-right: -30px;
 }
-.Visible2
-{
+.Visible2 {
     margin-right: -24px;
 }
 
-.Coeur:hover
-{
+.Coeur:hover {
     cursor: pointer;
 }
                                         
-.Coeur:hover .Visible, .Coeur:hover .Visible2
-{
+.Coeur:hover .Visible, .Coeur:hover .Visible2 {
     transition: opacity 0.9s;
     opacity: 0%;
 }
 
-.Coeur:hover .Invisible
-{
+.Coeur:hover .Invisible {
     transition: opacity 0.8s;
     opacity: 100%;
 }

@@ -1,24 +1,17 @@
-$Nouveau_cadre:#99E2D0;
-$Nouveau_ecrit: #008766;
-
-.Restaurant_section
-{
+.Restaurant_section {
     background-color: whitesmoke;
     width: 100%;
     margin-top: 2em;
     padding-bottom: 4em;
-        h2
-        {
+        h2 {
             font-weight: bold;
             margin: 1.5em 0 0.5em 1em;
         }
-        .Restaurant__liste
-        {
+        .Restaurant__liste {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-                .Lien_restaurant
-                {
+                .Lien_restaurant {
                     background-color: white;
                     border-radius: 15px;
                     box-shadow: 0px 0px 4px rgb(155, 154, 154);
@@ -28,8 +21,7 @@ $Nouveau_ecrit: #008766;
                     margin: 20px;
                     display: flex;
                     justify-content: end;
-                        .Nouveau
-                        {
+                        .Nouveau {
                             position: absolute;
                             background-color: $Nouveau_cadre;
                             color: $Nouveau_ecrit;
@@ -37,8 +29,7 @@ $Nouveau_ecrit: #008766;
                             padding: 0.5em;
                             margin: 1em 1em 0 0;
                         }
-                        .Restaurant
-                        {
+                        .Restaurant {
                             background-color: white;
                             display: flex;
                             flex-direction: column;
@@ -46,24 +37,20 @@ $Nouveau_ecrit: #008766;
                             box-shadow: 0px 0px 4px rgb(155, 154, 154);
                             height: 250px;
                             width: 100%;
-                                .Image_restaurant
-                                {
+                                .Image_restaurant {
                                     width: 100%;
                                     height: 175px;
                                     border-radius: 15px 15px 0 0;
                                     object-fit: cover ;
                                 }
-                                .Legende
-                                {
+                                .Legende {
                                     display: flex;
                                     justify-content: space-between;
                                     margin: 1em 1em 0 1em;
-                                        .Restaurant__texte
-                                        {
+                                        .Restaurant__texte {
                                             font-size: 1.1em;
                                         }
-                                        .Coeur
-                                        {
+                                        .Coeur {
                                             font-size: 1.5em;
                                             margin-top: 0.3em;
                                         }
@@ -75,21 +62,17 @@ $Nouveau_ecrit: #008766;
         }
 }
   
-.Fonctionnement
-{
+.Fonctionnement {
     margin: 1.5em 0 1.5em 0;
     width: 100%;
-        h2
-        {
+        h2 {
             margin: 0 0 1em 1em;
         }
-        .Fonctionnement__tableau
-        {
+        .Fonctionnement__tableau {
             position: relative;
             display: flex;
             flex-wrap: wrap;
-                .Tableau__case
-                {
+                .Tableau__case {
                     display: flex;
                     position: relative;
                     border-radius: 15px;
@@ -98,8 +81,7 @@ $Nouveau_ecrit: #008766;
                     width: 90%;
                     max-width: 350px;
                     margin: 0.7em auto 0.7em auto;
-                        .Case__chiffre
-                        {
+                        .Case__chiffre {
                             background-color: #9356DC;
                             color: white;
                             width: 24px;
@@ -112,14 +94,12 @@ $Nouveau_ecrit: #008766;
                             align-items: center;
                             align-self: center;
                         }
-                        .Case__signe_texte
-                        {
+                        .Case__signe_texte {
                             display: flex;
                             align-items: center;
                             width: 80%;
                             margin: 1em 0 1em 2em;
-                                .Signe
-                                {
+                                .Signe {
                                     color: #7e7e7e;
                                     margin-right: 1.2em;
                                     font-size: larger;
@@ -127,12 +107,10 @@ $Nouveau_ecrit: #008766;
 
                         }
                 }
-                .Tableau__case:hover
-                    {
+                .Tableau__case:hover {
                         background-color: #f5edff;
                         cursor: default;
-                            .Signe
-                            {
+                            .Signe {
                                 color: #9356DC;
                             }
                     }

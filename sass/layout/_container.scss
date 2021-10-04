@@ -1,7 +1,6 @@
-$Tertiaire:#99E2D0;
 
-.Image_carte
-{
+
+.Image_carte {
     width: 100%;
     max-height: 70vw;
     position: absolute;
@@ -18,15 +17,13 @@ $Tertiaire:#99E2D0;
         }
 }
 
-.Page_Restaurant
-{
+.Page_Restaurant {
     position: relative;
     display: flex;
     justify-content: center;
 }
 
-.Carte
-{
+.Carte {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -35,44 +32,36 @@ $Tertiaire:#99E2D0;
     position: relative;
     z-index: 1;
     margin-top: 60vw;
-    @media (min-width: 1050px)
-        {
+    @media (min-width: 1050px) {
             margin-top: 400px;
         }
-        .Carte_plats
-        {
-            @media (min-width: 1050px)
-            {
+        .Carte_plats {
+            @media (min-width: 1050px) {
                 display: flex;
                 flex-direction: row;
                 min-height: 400px;
             }
         }
-        .Carte__titre
-        {
+        .Carte__titre {
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: larger;
             font-weight: 500;
             margin: 30px 0 30px 0;
-                h1
-                {
+                h1 {
                     margin-right: 20px;
                 }
         }
-        a
-        {
+        a {
             align-self: center;
             margin: 20px 0 20px 0;
         }
-        .Carte__choix
-        {
+        .Carte__choix {
             display: flex;
             flex-direction: column;
             width: 100%;
-                h4
-                {
+                h4 {
                     width: 40px;
                     overflow: visible;
                     color: #353535;
@@ -80,14 +69,12 @@ $Tertiaire:#99E2D0;
                     border-bottom: 2px $Tertiaire solid;
                     margin: 0 0 5px 15px;
                 }
-                .Plats
-                {
+                .Plats {
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: space-around;
                     height: 100%;
-                        .Choix
-                        {
+                        .Choix {
                             display: flex;
                             overflow: hidden;
                             background-color: white;
@@ -99,12 +86,10 @@ $Tertiaire:#99E2D0;
                             box-shadow: 0px 0px 4px rgb(155, 154, 154);
                             cursor: pointer;
                             opacity: 0;
-                            @media (min-width: 1050px)
-                            {
+                            @media (min-width: 1050px) {
                                 width: 350px;
                             }
-                                .Texte_menu
-                                {
+                                .Texte_menu {
                                     width: 85%;
                                     white-space: nowrap;
                                     text-overflow: ellipsis;
@@ -112,19 +97,16 @@ $Tertiaire:#99E2D0;
                                     flex-shrink: 0;
                                     font-size: 15px;
                                     margin: 10px 0 10px 10px;
-                                    @media (max-width: 375px)
-                                    {
+                                    @media (max-width: 375px) {
                                         font-size: 12px;
                                     }
                                 }
-                                .Prix
-                                {
+                                .Prix {
                                     width: 15%;
                                     flex-shrink: 0;
                                     align-self: center;
                                 }
-                                .Icone_selection
-                                {
+                                .Icone_selection {
                                     width: 15%;
                                     flex-shrink: 0;
                                     border-radius: 0 15px 15px 0;
@@ -140,56 +122,45 @@ $Tertiaire:#99E2D0;
         }
 }
 
-.Choix1, .Choix2, .Choix3, .Choix4
-{
+.Choix1, .Choix2, .Choix3, .Choix4 {
     animation: Choix 1400ms;
     animation-fill-mode: both;
 }
 
-.Choix1
-{
+.Choix1 {
     animation-delay: 0.2s;
 }
 
-.Choix2
-{
+.Choix2 {
     animation-delay: 0.4s;
 }
 
-.Choix3
-{
+.Choix3 {
     animation-delay: 0.6s;
 }
 
-.Choix4
-{
+.Choix4 {
     animation-delay: 0.8s;
 }
 
-@keyframes Choix
-{
-    0% 
-    {
+@keyframes Choix {
+    0% {
         transform: translateY(20px);
         opacity: 0;
     }
-    75% 
-    {
+    75% {
         opacity: 0.6;
     }
-    100% 
-    {
+    100% {
         transform: translateY(0);
         opacity: 1;
     }
 }
 
-.Choix:hover .Icone_selection, .Choix:hover .Prix
-{
+.Choix:hover .Icone_selection, .Choix:hover .Prix {
     transform: translateX(-60px);
 }
 
-.Choix:hover .Texte_menu
-{
+.Choix:hover .Texte_menu {
     width: 10px;
 }

@@ -1,17 +1,11 @@
 /* autoprefixer: off */
-$Primaire: #9356DC;
-$Secondaire: #FF79DA;
-$Tertiaire: #99E2D0;
-
-*, ::before, ::after
-{
+*, ::before, ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.Bloc_page
-{
+.Bloc_page {
     max-width: 1340px;
     margin: auto;
     display: flex;
@@ -19,14 +13,12 @@ $Tertiaire: #99E2D0;
     justify-content: space-around; 
 }
 
-.Accueil
-{
+.Accueil {
     opacity: 0;
     animation-fill-mode: both;
 }
 
-.Chargement
-{
+.Chargement {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -42,8 +34,7 @@ $Tertiaire: #99E2D0;
     animation-duration: 2s;
 }
 
-@keyframes Chargement
-{
+@keyframes Chargement {
     0% {
         transform: rotate(0deg);
     }
@@ -54,15 +45,13 @@ $Tertiaire: #99E2D0;
     }
 }
 
-.Accueil
-{
+.Accueil {
     position: relative;
     animation-name: Bloc_page;
     animation-duration: 5s;
 }
 
-@keyframes Bloc_page
-{
+@keyframes Bloc_page {
     from{ opacity:0 } 
     to{ bottom:0; opacity:1 }
 }
