@@ -9,8 +9,7 @@ footer {
         }
         .Bas {
             list-style: none;
-            display: flex;
-            flex-direction: column;
+            @extend .Flex_colonne;
             padding-left: 2em;
             li {
                 margin-top: 0.5em;

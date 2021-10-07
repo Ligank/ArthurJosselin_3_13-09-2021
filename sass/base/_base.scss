@@ -8,8 +8,7 @@
 .Bloc_page {
     max-width: 1340px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
+    @extend .Flex_colonne;
     justify-content: space-around; 
 }
 

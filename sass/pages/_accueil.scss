@@ -4,17 +4,15 @@
     margin-top: 2em;
     padding-bottom: 4em;
         h2 {
-            font-weight: bold;
             margin: 1.5em 0 0.5em 1em;
         }
         .Restaurant__liste {
-            display: flex;
-            justify-content: center;
+            @extend .Flex_center;
             flex-wrap: wrap;
                 .Lien_restaurant {
                     background-color: white;
                     border-radius: 15px;
-                    box-shadow: 0px 0px 4px rgb(155, 154, 154);
+                    @include Ombre;
                     height: 250px;
                     width: 90%;
                     max-width: 450px;
@@ -31,11 +29,8 @@
                         }
                         .Restaurant {
                             background-color: white;
-                            display: flex;
-                            flex-direction: column;
+                            @extend .Flex_colonne;
                             border-radius: 15px;
-                            box-shadow: 0px 0px 4px rgb(155, 154, 154);
-                            height: 250px;
                             width: 100%;
                                 .Image_restaurant {
                                     width: 100%;
@@ -53,12 +48,10 @@
                                         .Coeur {
                                             font-size: 1.5em;
                                             margin-top: 0.3em;
-                                        }
-                                                                         
+                                        }                               
                                 }
                         }
                 }
-                
         }
 }
   
@@ -76,21 +69,20 @@
                     display: flex;
                     position: relative;
                     border-radius: 15px;
-                    box-shadow: 0px 0px 4px rgb(155, 154, 154);
+                    @include Ombre;
                     background-color: #f6f6f6;
                     width: 90%;
                     max-width: 350px;
                     margin: 0.7em auto 0.7em auto;
                         .Case__chiffre {
-                            background-color: #9356DC;
+                            background-color: $Primaire;
                             color: white;
                             width: 24px;
                             height: 24px;
                             border-radius: 50%;
                             position: absolute;
                             left: -12px;
-                            display: flex;
-                            justify-content: center;
+                            @extend .Flex_center;
                             align-items: center;
                             align-self: center;
                         }
@@ -111,7 +103,7 @@
                         background-color: #f5edff;
                         cursor: default;
                             .Signe {
-                                color: #9356DC;
+                                color: $Primaire;
                             }
                     }
         }
