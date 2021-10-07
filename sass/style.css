@@ -302,6 +302,7 @@ footer .Bas li .Infos {
   overflow: hidden;
   background-color: white;
   margin: 10px 0 10px 0;
+  padding: 10px 0 10px 10px;
   width: 95%;
   max-width: 350px;
   align-self: center;
@@ -318,13 +319,10 @@ footer .Bas li .Infos {
 }
 
 .Carte .Carte__choix .Plats .Choix .Texte_menu {
-  width: 85%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
-  flex-shrink: 0;
+  text-overflow: ellipsis;
   font-size: 15px;
-  margin: 10px 0 10px 10px;
+  flex: 1;
 }
 
 @media (max-width: 375px) {
@@ -333,16 +331,20 @@ footer .Bas li .Infos {
   }
 }
 
+.Carte .Carte__choix .Plats .Choix .Texte_menu .Texte_menu_petit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .Carte .Carte__choix .Plats .Choix .Prix {
-  width: 15%;
-  flex-shrink: 0;
   align-self: center;
+  margin: 17px 10px 0 0;
 }
 
 .Carte .Carte__choix .Plats .Choix .Icone_selection {
-  width: 15%;
-  flex-shrink: 0;
-  border-radius: 0 15px 15px 0;
+  width: 50px;
+  margin: -10px -50px -10px 0px;
   color: white;
   background-color: #99E2D0;
   display: flex;
@@ -386,12 +388,32 @@ footer .Bas li .Infos {
   }
 }
 
-.Choix:hover .Icone_selection, .Choix:hover .Prix {
-  transform: translateX(-60px);
+.Choix:hover .Confirmation {
+  animation: Rotation 0.8s;
+  animation-fill-mode: both;
 }
 
-.Choix:hover .Texte_menu {
-  width: 10px;
+@keyframes Rotation {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.Choix:hover .Icone_selection {
+  animation: Decalage 0.8s;
+  animation-fill-mode: both;
+}
+
+@keyframes Decalage {
+  0% {
+    margin-right: -50px;
+  }
+  100% {
+    margin-right: 0px;
+  }
 }
 
 nav {
