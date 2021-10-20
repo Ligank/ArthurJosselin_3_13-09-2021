@@ -22,7 +22,7 @@
 }
 
 .Accueil {
-  opacity: 0;
+  opacity: 0.10;
   animation-fill-mode: both;
 }
 
@@ -33,7 +33,7 @@
   z-index: 1;
   width: 120px;
   height: 120px;
-  margin: -75px 0 0 -75px;
+  margin: 0 0 0 -55px;
   border: 15px solid #9356DC;
   border-radius: 50%;
   border-top: 15px solid #FF79DA;
@@ -60,7 +60,7 @@
 
 @keyframes Bloc_page {
   from {
-    opacity: 0;
+    opacity: 0.10;
   }
   to {
     bottom: 0;
