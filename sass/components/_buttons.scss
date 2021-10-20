@@ -29,8 +29,8 @@
 }
 
 .Invisible {
-    color: #FF79DA;
-    background: -webkit-linear-gradient(#9356DC, #FF79DA);
+    color: $Secondaire;
+    background: -webkit-linear-gradient($Primaire, $Secondaire);
     -webkit-background-clip: text;
         background-clip: text;
     -webkit-text-fill-color: transparent;
